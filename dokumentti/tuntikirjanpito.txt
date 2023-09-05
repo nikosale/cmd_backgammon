@@ -1,0 +1,47 @@
+# T-106.213-projektityö, tuntikirjanpito 
+# Niko Salenius & Antti Savelainen
+
+
+22.12.04 4h
+
+Koodauksen aloitus. Tuntuman ottoa ja luokkien perusmetodeiden kirjoittelua.
+
+23.12.04 - 30.12.04 2 - 4 h
+
+Koodausta samassa hengessä kuin viimeksi. Lähes päivittäistä työskentelyä. 
+Nappula-luokan apumetodeiden ja liikuta()-luokan pohtimista.
+
+2.1.05. 4h
+
+Ymmärsimme tulla maarille kodin viihdykkeiden parista, ja työskentelyymme alkoi tulla 
+enemmän intensiivisyyttä ja aloimme huomata merkittäviä tuloksia tehdyssä työssä.
+Nappula-luokan hiomista ja pelilauta-luokan ensimmäiset koodinpalaset.
+
+3.1.05 9h
+
+Testiohjelmamme valmistui ja koodin varioiminen ja kehittyminen alkoi kiihtyä, niinsanotusti
+iteroituminen alkoi kohti toimivaa peliä. Maarintalolla oli välillä raskasta, mutta ryhmällemme
+loistava paikka keskittyä ohjelman tekemiseen. 
+
+4.1.05. - 6.1.05 7 - 10 h
+
+Työnteko jatkui tosissaan ja kiire pääsi yllättämään, ja jouduimmekin anomaan deadlinen 
+siirtämistä, koska kunnianhimo pääsi yllättämään ohjelmaa tehdessämme ja Backgammonin 
+säännöt osottautuivat yllättävän monimutkaisiksi ja aikaa vieviksi toteuttaa koodiksi. 
+Emme olisi saaneet kaatumatonta ohjelmaa deadlineen mennessä valmiiksi.
+
+8.1.05 - 12.1.05 8 - 10 h
+
+Jouduimme hyväksymään itsellemme, että graafinen käyttöliittymä oli jätettävä haaveeksi
+ja keskityttävä tekemään kunnialla tekstipohjainen, mutta täysin toimiva peli. Testausta, 
+tietokonepelaajan ja tarkastajan metodeiden tekeminen sekä testiruudunprinttaus-metodin 
+korvaus lopullisella sekä alustavaa pohdintaa siitä miten peruutus tulisi toteuttaa.
+
+13.1.05 11 h
+
+Peruutus-toiminnallisuuden hiomista. Ohjelmamme valmistui ja kulmia hiottiin vielä illalla 
+dokumentin teon ohessa. Lopulta kokonaisuus havaittiin valmiiksi ja uurastamiselle tuli piste. 
+
+
+
+Yhteensä 86 h.

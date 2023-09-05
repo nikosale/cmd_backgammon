@@ -1,0 +1,587 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html lang="fi"><head>
+<meta name="robots" content="noindex, nofollow"><title>T-106.213 projektityön dokumentti</title><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	-->
+	</style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in } </style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in } </style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	-</style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	--></style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	-</style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	--</style><meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"><meta name="GENERATOR" content="OpenOffice.org 1.1.2  (Linux)"><meta name="CREATED" content="20050113;11192200"><meta name="CHANGED" content="20050114;12245100"><style>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	--</style></head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#5555bb">
+<table align="center" border="0" width="90%" cellpadding="0" cellspacing="0">
+<tbody><tr align="left" valign="top"><td>
+<font face="helvetica, arial">
+
+
+
+      </font><h3><font face="helvetica, arial">T-106.213 projektityön dokumentti</font></h3>
+<font face="helvetica, arial">      <br>
+      <br>
+
+
+<font color="red"><h2><span style="color: rgb(0, 0, 0);">Backgammon</span><br>
+</h2></font>
+
+</font><p style="color: rgb(0, 0, 0);"><font face="helvetica, arial"><strong>Niko Salenius</strong> (<a href="tnimi@cc.hut.fi">nsaleniu@cc.hut.fi</a>), 58090J, KON II &amp;<br>
+
+<font face="helvetica, arial"><strong>Antti Savelainen</strong> (<a href="http://www.hut.fi/%7Et106213/mallipohjat/tnimi@cc.hut.fi">asavelai@cc.hut.fi</a>), 63220J, Tfy I </font><br>
+</font></p>
+
+<p style="color: rgb(0, 0, 0);"><font face="helvetica, arial">Viimeksi päivitetty 15.10.2004.</font></p>
+
+
+
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Yleiskuvaus</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	
+
+</font></font></p><p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Loimme
+tekstipohjaisen Backgammon-pelin, joka toimii aukotta sääntöjen
+mukaisesti. Peliä voi pelata kaveria tai yllättävän
+kiperiä siirtoja tekevää konetta vastaan. Peli näyttää
+ruudulla laudan ja nappulat sijaintineen. Tehdyt siirrot voidaan
+perua (valinnaisten siirtojen määrällä) ja näin
+tilanne palaa sellaiseksi, kuin se oli ennen nappuloiden liikutusta.
+Alunperin suunnitelmissa ollut graafinen toteutus jäi haaveeksi,
+vaikka pelimoottorimme kyllä tarjoaisi hyvät mahdollisuudet
+laajentaa pelin haluamansa näköiseksi.</font></font></font></font></p>
+
+
+
+
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Käyttöohje</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	<font color="#000000"><font face="helvetica, arial">Kun
+kaikki tarvittavat luokat ovat samassa hakemistossa, käsky “java
+Pelaa” käynnistää pelin, jonka jälkeen
+kysytään, halutaanko pelata konetta vastaan. Sitten
+kysytään käyttäjän tai käyttäjien
+nimet jonka jälkeen aloittaja arvotaan.  Tällöin
+nappuloiden siirtely voi alkaa. Peli tulostaa ruudulle
+merkkifgrafiikalla    pelin tilanteen, jossa ensimmäisen
+pelaajan nappulat on kuvattu ykkösillä ja toisen pelaajan
+nappulat nollilla. Tietokonevastustaja on aina toinen pelaaja, mikäli
+on pelissä mukana. Nappuloiden ylä- ja alapuolella on
+sektorien numeroita, joiden avulla nappuloita liikutellaan kentällä.</font></font>
+
+</font></font></p><p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000">Kun
+pelin tilanne on printattu ruudulle käyttäjältä
+kysytään lähtö- ja tulosektoria, jotka ovat
+ruudulla näkyviä numeroita. Käyttäjä antaa
+numerot ja riippuen siirtojen oikeellisuudesta nappula liikutetaan
+tai ruudulle tulostetaan virheviesti ja nappula jää
+liikuttamatta. Virheviestejä on monia erilaisia, mutta yleisin
+lienee “Nappulaa ei voida liikuttaa sektorista X sektoriin X
+noppien silmäluvuilla X ja X.”. Jos siirto käyttää
+vain toisen nopista, sen jälkeen printataan päivittynyt
+ruutu ja kysellään komentoa</font></font>.</font></font></p>
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Komentojen
+avulla on mahdollista panoksen tuplaus, siirtojen peruminen, pelin
+lopetus, pelaajien pisteiden näyttäminen, pelin arvon
+näyttäminen tai siirron ohittaminen, jota ei voi useimmissa
+pelin tilanteissa tehdä. Tällöin tietokone neuvoo
+pelin laillisten siirtojen tekemisessä. Peliä voidaan
+pelata montaa erää samaan putkeen samoilla pelaajilla,
+jolloin edellisten erien pisteet jäävät voimaan ja
+uusien pelien pisteet lisätään vanhoihin.</font></font></font></font></p>
+
+
+
+
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Ohjelman rakenne</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	<font color="#000000"><font face="helvetica, arial">public
+class Nappula</font></font>
+
+</font></font></p><p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Nappula-luokka
+pitää huolen siirtojen laillisuuden testaamisesta ja luokan
+keskeisin metodi on varmasti <i>public boolean liikuta() </i><span style=""><span style="font-style: normal;">joka
+pääsi hieman levähtämään sääntöjen
+paljouden takia. Kyseinen metodi käyttää hyväksi
+siirron oikeellisuutta tarkastaessaan lukuisia apumetodia, kuten
+</span><i>public boolean</i><span style="font-style: normal;">
+</span><span style="text-decoration: none;"><i>onkoTuplaSiirtoOk()
+</i><span style="font-style: normal;">joka tarkastaa molempien noppien
+silmälukujen vaativan siirron oikeellisuuden. Mikäli siirto
+on sääntöjen mukaan oikea, niin sen mukaisesti
+liikutetaan nappuloita. Metodi </span><i>public boolena onkoLiikeOk()</i><span style="font-style: normal;">
+on muuten sama kuin </span><i>public boolean liikuta()</i><span style="font-style: normal;">,
+mutta se ei liikuta mitään nappuloita, se vain kertoo
+tietokonepelaajalle millainen siirto on kyseessä (syöminen
+tai suojaus) kutsumalla sen metodeita,  sekä palauttaa true tai
+false sen mukaan onko siirto oikein vai ei. Tätä metodia
+käyttää apunaan </span><i>tietokonePelaaja()</i><span style="font-style: normal;">
+luokka.</span></span></span></font></font></font></font></p>
+
+<p style="margin-bottom: 0in; font-style: normal; text-decoration: none;">
+<font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial"><br>
+public class
+Backgammon </font></font>
+</font></font></p>
+
+<p style="margin-bottom: 0in;">
+<span style=""><span style="text-decoration: none;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000"><span style="font-style: normal;">Tämä
+luokka kuvaa pelilaudan tilannetta. Pelin tilanne muodostuu
+seuraavista asioista: missä kukin nappula sijaitsee, pelin arvo,
+kuka on vuorossa, kenellä on cube, eli kuka saa ehdottaa
+tuplausta, noppien silmäluvut heiton jälkeen, sekä
+onko jompikumpi nopista jo käytetty sekä tuliko
+mahdollisesti kaksi samaa noppaa, jolloin molemmat nopat saa käyttää
+kahdesti. Tärkein tai ainakin käytetyin metodi on public
+int </span><i>heitäNoppaa() </i><span style="font-style: normal;">joka
+heittelee noppia pitkin peliä ja </span><i>public void
+vaihdaVuorossaOlija(int vuoro) </i><span style="font-style: normal;">vaihtaa
+vuoron parametrina annetulle pelaajalle. Nappula-oliot sijaitsevat
+sektoreissa, jotka on tallennettu tähän luokkaan listaan.
+Sektoreihin pääsee käsiksi kerroSektori()-metodilla,
+jolle annetaan parametrina sektorin indeksi.</span></font></font></font></font></span></span></p>
+<p style="margin-bottom: 0in; font-style: normal; text-decoration: none;">
+<font face="helvetica, arial"><font color="red"><br>
+</font></font></p>
+<p style="margin-bottom: 0in; font-style: normal; text-decoration: none;">
+<font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">public class
+Pelilauta</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;">
+<span style=""><span style="text-decoration: none;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000"><span style="font-style: normal;">Tämä
+metodi tallettaa pisteet pelattaessa peli, jossa on monta erää
+ja huolehtii pelin pyörittämisestä ja siihen
+liittyvistä käskyistä kuten lopettamisesta.
+Pelilauta-luokassa sijaitsee myös koko pelin käyttöliittymä.
+Käyttöliittymä koostuu ruudulle printtauksista
+(tärkeimpinä päivitäRuutu2() kertoo pelilaudan
+tilanteen, kysyKomento() sekä kysyLahtoSektori() ja
+kysyTuloSektori()). Tämän luokan tärkein metodi on
+varmasti </span><i>public void pelaa(), </i>joka pyörii niin
+kauan kuin kutakin peliä riittää. Pelaa-metodi ottaa
+parametrinaan merkkijonon ja jos tuo merkkijono on “uusi” se
+tarkoittaa sitä, että alkaa uuden pelin ensimmäinen
+erä. Jos parametri on jotain muuta jatketaan vanhoilla
+pelaajilla ja pisteillä, mutta erä on uusi. Uuden pelin
+ollessa kyseessä udellaan pelaajien nimiä ja halutaanko
+pelata konetta vastaan. Kysymistä jatketaan kunnes saadaan kelpo
+vastaus. Pelilaudan metodit myös pitävät osittain
+huolen siitä, ettei ohjelma kaadu virheellisiin syötteisiin.
+Nappula-luokka pitää myös huolta tästä.</font></font></font></font></span></span></p>
+
+<p style="margin-bottom: 0in; text-decoration: none;">
+<font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Kun nappulaa
+liikutetaan sääntöjen puitteissa liikutusta vastaava
+nopan silmäluku nollataan luokasta <i>Backgammon()</i>
+kutsumalla sen <i>nollaaNoppa1()</i> tai <i>nollaaNoppa2()</i>
+metodia. Seuraavaan vuoroon siirrytään kun molemmat nopat
+tulevat nollaksi. </font></font>
+</font></font></p>
+
+
+<p style="margin-bottom: 0in; font-style: normal; text-decoration: none;">
+<font face="helvetica, arial"><font color="red">      <br>
+<font color="#000000"><font face="helvetica, arial">public class
+Sektori</font></font></font></font></p>
+
+
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000">Sektori-luokka
+kuvaa eri paikkoja, joihin nappulat voivat sijoittua. Kun sektori
+luodaan sille annetaan parametrina maksimikoko ja mahdollisesti
+nappula-lista, joka sitten talletetaan sektoriin.<br>
+<i><br>
+public
+Nappula poistaNappula() </i><span style="font-style: normal;">,
+</span><i>boolean Nappula lisaaNappula() </i><span style="font-style: normal;">ovat
+kyseisen luokan tärkeimmät metodit. Nämä metodit
+saavat nappulat siirtymään siirtojen oikeellisuuden ollessa
+jo tarkastettu. Lisäksi sektorin metodit </span><i>public
+Nappula kerroNappula() </i><span style="font-style: normal;">ja </span><i>public
+int kerroNappulat() </i><span style="font-style: normal;">ovat
+jatkuvasti käytössä, koska palautusarvona on sektorin
+päällimmäinen nappula, jota voidaan tarvittaessa
+esimerkiksi siirtää. </span></font></font>
+</font></font></p>
+
+
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><br>
+<font color="#000000"><font face="helvetica, arial">public
+class VirheellinenSiirto</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000">Tärkein
+metodi on sen ainoa sellainen, <i>public String kerroKuvausViesti(),
+</i><span style="font-style: normal;">joka palauttaa virheen
+tapahtuessa annetun kuvausviestin. Luokkaa niinsanotusti catchaa
+virhetilanteet ja kuvausviesti pitää sisällään
+virheen tapahtumisen syyn.</span></font></font></font></font></p>
+
+<p style="margin-bottom: 0in; font-style: normal;"><font face="helvetica, arial"><font color="red"><br>
+<font color="#000000"><font face="helvetica, arial">public
+class TietokonePelaaja</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font face="helvetica, arial"><font color="#000000"><span style="font-style: normal;">Tärkein
+metodi on </span><i>public boolen maaritaSiirto()</i><span style="font-style: normal;">,
+joka käy läpi kaikki mahdolliset siirrot ja valitsee niistä
+taktisesti järkevimmän. Toinen tärkeä metodi on
+</span><i>public boolean maaritaSiirto0() </i><span style="font-style: normal;">joka
+katsoo pystyykö 0-pelaaja siirtämään (siis jos
+käyttäjä yrittää laiminlyödä
+vuoronsa ilman syytä). </span><i>public boolean maaritaSiirto()</i><span style="font-style: normal;">
+on muuten samankaltainen metodi kuin edellä, mutta se toimii
+toiselle pelaajalle, eli pelaaja-1:selle. Tietokonepelaaja käyttää
+</span><i>maaritaSiirto()-</i><span style="font-style: normal;">metodia
+siirtonsa määrittämiseen ja sitten tallettaa sen
+sisäisiin kenttiinsä kutsumalla metodia </span><i>kirjaaSiirto().
+</i><span style="font-style: normal;">Käyttäjän
+siirtojen virheellisiä ohituksia valvoo siis ilmentymä
+</span><i>tietokonePelaaja()</i><span style="font-style: normal;">
+luokasta. </span></font></font>
+</font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><br>
+<font color="#000000"><font face="helvetica, arial">public
+class Pelaa</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Kaikki
+metodit ovat tärkeitä ja tässä luokassa
+sijaitseekin pääkäynnistys-metodi. Tämä
+luokka saa pelin lähtemään liikkeelle alusta alkaen.</font></font></font></font></p>
+
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><br>
+<font color="#000000"><font face="helvetica, arial">public
+class Liikkeentallennus</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Tämä
+luokka tallentaa tehdyn liikkeen, omaksi oliokseen, joita tarvitaan
+aikaisempien pelitilanteiden palauttamiseksi. Talteen on siis
+otettava ainakin lähtö- ja tulosektorit sekä
+vuorossaolija ja lisäksi sen hetkinen panos ja tuplauskuution
+omistaja sekä noppien silmäluvut ja nollatut nopat jos on
+saatu kaksi samaa noppaa.</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial"><br>
+public
+class Liike</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Tämä
+luokka tallentaa Array-listaan kaikki Liikkeentallennus-luokat,
+joihin voidaan myöhemmin palata <i>public void peruuta(int
+peruutuslkm). </i></font></font>
+</font></font></p>
+<font face="helvetica, arial"><font color="red"> 
+</font>
+
+
+<br>
+</font><h3><font face="helvetica, arial">Algoritmit</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	<span style="font-style: normal;"><font face="helvetica, arial"><font color="#000000">Nappula-luokassa
+tutkitaan “liikuta”-metodilla siirron oikeellisuutta rajaamalla
+aina tietyt ehdot (kuten baarin tyhjyys ja oman nappulan liikutus)
+jonka jälkeen voidaan kokeilla esimerkiksi noppien silmälukujen
+täsmääminen (vaihtoehtoisesti joko toisella nopalla
+tai molemmilla) Kaikkien ehtojen täsmätessä, voidaan
+palauttaa true, jonka jälkeen käyttäjän ehdottama
+siirto voidaan hyväksyä ja toteuttaa.  “Liikuta”-metodi
+käyttää hyväkseen lukuisia apumetodeja, jotta
+if-lausekkeet saataisiin vähän lyhyemmiksi ja selkeimmiksi
+(esim. onkoTuplaSiirtoOk() ja onkoLiikeOk()).</font></font></span></font></font></p><p align="left" style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"> 
+</font></font></p>
+
+
+<p style="margin-bottom: 0in; font-style: normal;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Backgammon-luokassa
+aluksi alustetaan järjestelmällisesti kaikille sektoreille
+niille kuuluvat nappulat. Lisäksi on mahdollista kysyä että
+ovatko kaikki kotona, eli viimeisessä pelipöydän
+neljänneksessä, joka lasketaan laskemalla kuuden viimeisen
+sektorin ja kotisektorin nappuloiden määrä, jonka on
+oltava 15. Noppien heitto tapahtuu arpomalla (javan palveluita
+hyväksikäyttäen) luku välilta 0-5 ja siihen
+lisätään yksi, jolloin saatu satunnaisluku muistuttaa
+nopan silmälukua. Silmalukujen nollausmetodi perustuu siihen,
+että tuplien tullessa muuttuja tuplanollaus saa arvon 2, jonka
+jälkeen noppien silmälukujen nollaus saa uuden ehdon,
+jolloin molempien noppin käyttö vähentää
+arvoa tuplanollaus yhdellä. Tämä saa aikaan yhteensä
+neljä silmälukua käytettäviksi kahden sijaan.</font></font></font></font></p>
+
+
+<p style="margin-bottom: 0in; font-style: normal;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Pelilaudan
+pelaa-metodi kysyy aluksi pelaajilta tarvittavat kysymykset, jonka
+jälkeen aletaan pyörittämään peliä,
+kunnes voittaja löytyy. Vuoroja vaihdellaan vuorossaolijan
+perusteella ja vuoro siirretään seuraavalle kun noppien
+silmäluvut ovat käytetty. Kun voittaja löytyy,
+kerrotaan kumpi voitti pelin ja voittaja saa omat pisteensä. Sen
+jälkeen aloitetaan uusi peli kysymättä nimiä,
+koska pelaa metodi ei saa parametriaan. </font></font>
+</font></font></p>
+
+<p style="margin-bottom: 0in; font-style: normal;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Vuorojen
+välissä päivitetään ruutu, mikä on
+erilainen molemmille pelaajille. Sektoreiden numeroarvot siis
+kääntyvät ympäri ja näin molemmat näkee
+samanlaiset pelilaudat. Lisäksi joka vuoron välissä
+kysytään komentoja, joista käyttäjä voi
+valita mieleisensä tai jatkaa vaan pelaamistaan.</font></font></font></font></p>
+
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Sektori-luokassa
+tarjottavat palvelut ovat aika yksinkertaisia, lukuunottamatta
+toStringiä, joka piirtää ruudulle tarvittavan määrän
+tarvittavia nappuloita.</font></font></font></font></p>
+
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Tietokonepelaaja-luokassa
+on metodi maaritaSiirto(), joka käy läpi kaikki luvalliset
+siirrot arvojärjestyksessä. Tutkitaan kaikkien nappuloiden
+lailliset mahdollisuudet liikkumiseen noppien silmäluvuilla.
+Ensinnäkin ollaan kiinnostuneita baarista pois siirtämisestä
+(sääntöjen mukaan pakollista), ja ensimmäinen
+sopiva siirto palauttaakin arvon true, jolloin silmukan kiertäminen
+lopetetaan ja baarista tullaan ulos kirjaaSiirto()-metodin avulla.
+Seuraavaksi ollaan kiinnostuneita kotiin kohdistuneista siirroista
+(olettaen että baari oli tyhjä), sitten syömisestä
+ja oman nappulan suojaamisesta sekä lopuksi tuiki tavallisista
+laillisista siirroista. Jokaisen eri siirtotyypin kohdalla käydään
+mainitussa järjestyksessä kaikki mahdolliset siirrot läpi,
+ja heti kun sopiva siirto löydetään, silmukan pyöritys
+lopetetaan ja siirto vahvistetaan ja tehdään. Näin
+saadaan tietokone liikuttamaan aina ihanteellisella tai lähes
+ihanteellisella tavalla.</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Metodi
+maaritaSiirto0() käy läpi samat kohdat kuin
+maaritaSiirto(9, mutta toiseen suuntaan pelilautaa pitkin (mutta
+samaa siirtojen hierarkiaa noudattaen) ja palauttaakin ensimmäisen
+ja parhaan siirron ihmispelaajan hyväksi ja siitä kerrotaan
+pelaajalle.</font></font></font></font></p>
+
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Liike-luokassa
+tallennetaan kaikki tehdyt siirrot ja pelissä tapahtuneet
+merkittävät muutokset eli Liikkeentallennus-oliot
+array-listaan, josta voidaan tarvittaessa etsiä menneet
+tilanteet (esimerkiksi viisi siirtoa sitten) ja kakki siirrot jotka
+tehtiin siinä välissä on myös tallessa (viisi
+siirtoa) ja ne toteutetaan väärinpäin jonka jälkeen
+ollaankin jo nappuloiden ja muiden pelimuuttujien (esim. panos)
+puolesta tismalleen samassa tilassa.</font></font></font></font></p>
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Tietorakenteet</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	<font color="#000000"><font face="helvetica, arial">Ohjelmamme
+pitää sisällään esimerkiksi Sektori-olioita,
+jotka ovat vuorostaan listattu taulukkoon Backgammmon-luokkaan.
+Sektori-luokat pitävät sisällään
+nappula-taulukkoja, jotka luonnollisesti koostuvat Nappula-olioista.
+Tämä on luultavasti paras mahdollisuus tiedon
+hallitsemiseen, koska näin jokainen tietää ainoastaan
+tarvittavan, ja ohjelman pyöritys kevenee. Kaikki muut taulukot
+olivat kooltaan selkeästi rajattu, paitsi
+Liikkeentallennusluokassa sijaitseva ArrayList-lista, johon kaikki
+tehdyt pelitilanteen muutokset tallennetaan jokaisen nappulan
+liikutuksen jälkeen. Ei voida siis tietää, että
+monta siirtoa tullaan maksimissaan tekemään, vaikka sen
+laskeminen olisi ainakin teoriassa täysin mahdollista, joten
+ArrayList on tähän oikea valinta. </font></font></font></font></p><p style="margin-bottom: 0in;">
+</p>
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Poikkeamat suunnitelmasta</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	<span style=""><font face="helvetica, arial"><font color="#000000">Metodien
+nimet poikkeavat suunnitelmasta melkoisesti, mutta suunnitelman
+luokissa lueteltu toiminnallisuus toteutuu tekemässämme
+ohjelmassa, sillä emme seuranneet suunnitelmaa orjallisesti.
+Suunnitelman hyöty oli siinä, että olimme kertaalleen
+ajatelleet ohjelman läpi ja iteratiivisen ohjelmitokehityksen
+ideaa mukaillen seuraava iteraatio ohjelmasta kypsyi päässämme.
+Suurin muutos suunnitelmaan on graafisen käyttöliittymän
+korvaaminen tekstipohjaisella, sillä aikataulumme ei viikon
+lisäajasta huolimatta riittänyt siihen, sillä
+halusimme tehdä ohjelmasta sen omissa puitteissa täysin
+toimivan ja kaatumattoman. Tästä syystä esimerkiksi
+kysyPelaajat-metodi, joka oli suunnitelmassa jäi pois. Toiseksi
+suurin poikkeama suunnitelmasta on se, että teimme
+<i>Nappula()</i>-luokan, joka kuvaa nappulaa sen sijaan, että
+olisimme kuvanneet nappuloita int-taulukolla Backgammon-luokalla.
+Tämän muutoksen takia teimme myös Sektori()-luokan,
+joka sisältää nappuloita ja jätimme pois
+suunnitelmassa olleen <i>Liike()</i>-luokan, joka olisi kuvannut
+nappuloiden oikeellisia liikkeitä kullakin pelin hetkellä.
+Emme arvanneet, että projekti veisi niin huomattavasti aikaa
+kuin olemme siihen käyttäneet ja suunnitelmassamme
+ajankäyttösuunnitelma oli ehkä heikoin osuus, joten
+sen takia aikataulumme petti.</font></font></span>
+</font></font></p>
+
+
+
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Arvio lopputuloksesta</font></h3>
+
+<font face="helvetica, arial"><font color="red">
+</font></font><p>
+
+
+<font face="helvetica, arial"><font color="red">	
+	
+	
+	
+	
+	<font color="#000000"><font face="helvetica, arial">Ohjelmastamme
+tuli hyvä, vaikkei ehkä täydellinen. Välillä
+pelatessa voi alkaa rasittamaan kysymykset, joissa vaaditaan
+käyttäjältä jotain komentoa yms. Tämä
+on oire tekstipohjaisesta ulkonäöstä, jolloin käyttä
+Työmme ei ole kaatumiseltaan pommin varma, vaikka se siltä
+jossain vaiheessa vaikutti. Peruskäytössä pel ei ole
+kovin kaatumisherkkä Jos käyttäjä erityisesti
+haluaa, hän luonnollisesti luultavasti saa pelin kaatumaan,
+tavalla tai toisella. Graafisuus tekisi tekisi pelistämme
+huomattavasti aidomman oloisen ja ehkä viihdyttävämmän
+kokonaisuuden. Virheviesteissä olisi vielä hieman hiomisen
+varaa, sillä ohjelmamme voisi ilmoittaa tarkemmin miksi tietty
+siirto ei toimi ainoastaan yleisen virheviestin sijaan, näin
+esimerkiksi backgammonin sääntöihin perehtymätön
+käyttäjä saisi tietää tarkemmin miksi
+mikäkin virheellinen siirto ei toimi.</font></font>
+</font></font></p><p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">	</font></font></font></font></p>
+<p style="margin-bottom: 0in;"><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial">Ohjelmamme
+soveltuu muutoksien tekemiseen, koska esimerkiksi tekstipohjainen
+olemus perustuu vain sektoreiden nappuloiden tarkkailuun ja näin
+ollen graafiseen kokonaisuuteen siirtyminen olisi helppoa. Lisäksi
+tietokonepelaajaamme voisi lisätä pieniä
+yksityiskohtia, jolloin se alkaisi muistuttamaan täydellistä
+pelaajaa. Tällä hetkellä tietokonepelaaja  liikuttaa
+ennalta-arvattavasti, mutta siirtojen satunnaiseksi muuttaminen ei
+olisi isokaan vaiva. Luokkajakoon olemme tyytyväisiä, mutta
+jotkut metodit ovat päässeet räjähtämään
+liian isoiksi. Tuntemattoman koodaajaan voisi olla paikoitellen
+hankalaa tutustua loogisiin päättelyketjuihimme.
+Esimerkiksi Pelilaudan pelaa()-metodin olisi voinut pilkkoa
+pienempien metodien kutsuiksi koodin lukemisen ja muuttelemisen
+selkeyttämiseksi.</font></font></font></font></p>
+
+
+
+
+<font face="helvetica, arial"><br>
+</font><h3><font face="helvetica, arial">Viitteet</font></h3><font face="helvetica, arial"><font color="red"><font color="#000000"><font face="helvetica, arial"></font></font></font></font><font face="helvetica, arial"><font color="red"><span style="color: rgb(0, 0, 0);">Käytimme
+yllättävän vähän ulkopuolista materiaalia
+projektin valmiiksi saattamiseen. Suunnitelmassa mainittua Arto Wiklan
+teosta emme edes avanneet. Luentomateriaalit olivat kovimmassa
+käytössä kerratassamme mm. listojen ym. javan tarjoamien
+palveluiden toimivuutta. Javan api:a jouduimme myös
+käyttämään esimerkiksi toteuttaessamme
+nopanheitto-metodin Backgammon-luokassa. Ircnetin IRC-kanavalta #java
+saimme myös kiitettävän nopeasti apua ongelmaan miten
+kopioida olio. Lopulta kun tajusimme, että kopiointimetodi
+täytyisi kirjoittaa itse, päädyimme toisenlaiseen
+ratkaisuun (kyseessä oli pelin siirtojen peruutus ja aluksi
+kuvittelimme että se olisi helposti toteutettavissa kopioimalla
+Backgammon-olioita listaan).</span></font></font><br>
+      <br>
+
+
+<font face="helvetica, arial"><font color="red">
+
+</font>
+
+<br>
+</font><h3><font face="helvetica, arial">Liitteet</font></h3><font face="helvetica, arial"><font color="red"></font></font><ul>
+<li><font face="helvetica, arial"><a href="tuntikirjanpito.txt">tuntikirjanpito</a></font></li><li><font face="helvetica, arial"><a href="kokoLahdeKoodi.txt">lähdekoodi</a><br>
+        </font></li>
+</ul>
+
+
+
+</td></tr></tbody></table>
+</body></html>
